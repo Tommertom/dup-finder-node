@@ -67,7 +67,7 @@ if (sameNameFilter) {
         const fileList = SameSize[size];
         let newFileList = [];
 
-        // let's get all hashes and calculate the occurences
+        // let's get all names and calculate the occurences
         const fileNames = fileList.map(file => file.File)
         const nameOccurences = fileNames.reduce(function (acc, curr) {
             return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
