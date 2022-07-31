@@ -21,6 +21,8 @@ So, this tool requires a lot of manual starting and stopping and checking - but 
 
 The key element here is the data-structure created in `SameSize`. This is going to be a huge tree with filesizes and the files that are found. And each file entry gets a lots of properties assigned in order to have kill-rules work on a per-file basis. So this also means aggregate properties are stored at file level - a lot of counting and redundant storage done. But that should not be a big issue.
 
+N.B. This code does not do any deletes - it only creates a list of files you could delete.
+
 Placed here on github for future reference.
 
 
