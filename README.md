@@ -11,6 +11,10 @@ Third part - using content comparison - runs files through a hashing mechanmism 
 
 Once all the filtering is done, there is a final run-through to mark files for deletion. This is all very specific to your situation.
 
+Then a number of key checks are needed - 1) not all files of one specific unique match are deleted 2) there are mutliple of one unique match kept.
+
+1. means - tweak filters to be more specific (false positives). 2 means the filters are too specific (false negatives).
+
 The output are multiple things, like error messages as well as DOS-based commands to remove the files. ("DEL"). The master file has the prefix "REM". 
 
 So, this tool requires a lot of manual starting and stopping and checking - but that works for me!
