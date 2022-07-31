@@ -15,6 +15,8 @@ The output are multiple things, like error messages as well as DOS-based command
 
 So, this tool requires a lot of manual starting and stopping and checking - but that works for me!
 
+The key element here is the data-structure created in `SameSize`. This is going to be a huge tree with filesizes and the files that are found. And each file entry gets a lots of properties assigned in order to have kill-rules work on a per-file basis. So this also means aggregate properties are stored at file level - a lot of counting and redundant storage done. But that should not be a big issue.
+
 Placed here on github for future reference.
 
 
